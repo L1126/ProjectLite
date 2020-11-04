@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginPwdFragment">
+
+    <fragment
+        android:id="@+id/loginPwdFragment"
+        android:name="com.projectlite.android.LoginPwdFragment"
+        android:label="fragment_login_pwd"
+        tools:layout="@layout/fragment_login_pwd" >
+        <action
+            android:id="@+id/action_loginPwdFragment_to_signUpInputPhoneFragment"
+            app:destination="@id/signUpInputPhoneFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpInputPhoneFragment"
+        android:name="com.projectlite.android.SignUpInputPhoneFragment"
+        android:label="fragment_sign_up_input_phone"
+        tools:layout="@layout/fragment_sign_up_input_phone" />
+</navigation>

@@ -1,2 +1,5 @@
+include ':IMKit'
+include ':IMLib'
 include ':app'
 rootProject.name = "ProjectLite"
+include ':leancloudchatkit'
